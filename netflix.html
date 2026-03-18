@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CINEFLIX</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="color: blue;">CINEFLIX</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="netflix.html"
+                            style="color: rgb(0, 0, 136);">Filmes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="series.html" , style="color: rgb(0, 0, 136);">Series</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" style="color: rgb(0,0,136);">
+                            Ver Mais
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="top10.html" style="color: rgb(0,0,136);">Top 10</a></li>
+                            <li><a class="dropdown-item" href="novidades.html" style="color: rgb(0,0,136)">Novidades</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="login.html" style="color: rgb(0,0,136);">Log-in</a></li>
+                        </ul>
+                </ul>
+                
+                </form>
+            </div>
+        </div>
+    </nav>
+
+</head>
+
+<body>
+
+    <style>
+        body {
+            background-color: #ffffff;
+            color: rgb(0, 0, 136);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .titulo {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        /* Carrossel horizontal */
+        .carrossel {
+            display: flex;
+            overflow-x: auto;
+            gap: 10px;
+            scroll-behavior: smooth;
+        }
+
+        .carrossel::-webkit-scrollbar {
+            display: none;
+            /* esconde a barra de rolagem */
+        }
+
+        /* Cada item do carrossel */
+        .item {
+            position: relative;
+            min-width: 200px;
+            height: 300px;
+            border-radius: 5px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Zoom ao passar o mouse */
+        .item:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        /* Título sobre a imagem */
+        .item .titulo-filme {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 5px;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+            text-align: center;
+            font-size: 16px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .item:hover .titulo-filme {
+            opacity: 1;
+        }
+    </style>
+    </head>
+
+    <body>
+
+        <div class="container">
+            <div class="titulo">Populares</div>
+
+            <div class="carrossel">
+                <div class="item">
+                    <a href="fime1.html">
+                    <img src="batman.webp" alt="Filme 1">
+                    </a>
+                    <div class="titulo-filme">Filme 1
+                        
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="filme2.html">
+                    <img src="star wars.jpg" alt="Filme 2">
+                    </a>
+                    <div class="titulo-filme">Filme 2
+                
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="filme3.html">
+                    <img src="invocação do mal.jpg" alt="Filme 3">
+                    </a>
+                    <div class="titulo-filme">Filme 3
+                    
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="filme4.html">
+                    <img src="farofeiros.jpg" alt="Filme 4">
+                    </a>
+                    <div class="titulo-filme">Filme 4
+                    
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="filme5.html">
+                    <img src="visi.jpg" alt="Filme 5">
+                    </a>
+                    
+                    <div class="titulo-filme">Filme 5</div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>
+</body>
+
+</html>
+
+</body>
+
+</html>
