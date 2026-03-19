@@ -10,7 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-
+<div style="text-align: center;">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#" style="color: blue;">CINEFLIX</a>
@@ -44,8 +44,8 @@
                         </ul>
                 </ul>
                 
-                </form>
             </div>
+        </div>
         </div>
     </nav>
 
@@ -129,70 +129,177 @@
     <body>
 
         <div class="container">
-            <div class="titulo">Top10 Filmes e Series</div>
+            <div class="titulo">Top10 filmes e series</div>
 
             <div class="carrossel">
                 <div class="item">
                     <a href="fime1.html">
-                        <img src="papel.png" alt="Serie 1">
+                    <img src="truman.jpg" alt="Filme 1">
                     </a>
-                    <div class="titulo-filme">Serie 1
-
+                    <div class="titulo-filme">Filme 1
+                        
                     </div>
                 </div>
                 <div class="item">
                     <a href="filme2.html">
-                        <img src="batman.webp" alt="Serie 2">
+                    <img src="ilha.jpg" alt="Filme 2">
                     </a>
-                    <div class="titulo-filme">Serie 2
-
+                    <div class="titulo-filme">Filme 2
+                
                     </div>
                 </div>
                 <div class="item">
                     <a href="filme3.html">
-                        <img src="breaking.jpg" alt="Serie 3">
+                    <img src="o por.webp" alt="Filme 3">
                     </a>
-                    <div class="titulo-filme">Serie 3
-
+                    <div class="titulo-filme">Filme 3
+                    
                     </div>
                 </div>
                 <div class="item">
                     <a href="filme4.html">
-                        <img src="farofeiros.jpg" alt="Serie 4">
+                    <img src="frera.jpg" alt="Filme 4">
                     </a>
-                    <div class="titulo-filme">Serie 4
-
+                    <div class="titulo-filme">Filme 4
+                    
                     </div>
                 </div>
                 <div class="item">
                     <a href="filme5.html">
-                        <img src="ye.jpeg" alt="Serie 5">
+                    <img src="ni.jpg" alt="Filme 5">
                     </a>
-
-                    <div class="titulo-filme">Serie 5</div>
-                </div>
-                <div class="item">
-                    <img src="visi.jpg" alt="Filme 6">
-                    <div class="titulo-filme">Filme 6</div>
-                </div>
-                <div class="item">
-                    <img src="game.jpg" alt="Filme 7">
-                    <div class="titulo-filme">Filme 7</div>
-                </div>
-                <div class="item">
-                    <img src="invocação do mal.jpg" alt="Filme 8">
-                    <div class="titulo-filme">Filme 8</div>
-                </div>
-                <div class="item">
-                    <img src="the.jpg" alt="Filme 9">
-                    <div class="titulo-filme">Filme 9</div>
-                </div>
-                <div class="item">
-                    <img src="star wars.jpg" alt="Filme 10">
-                    <div class="titulo-filme">Filme 10</div>
+                    
+                    <div class="titulo-filme">Filme 5</div>
                 </div>
             </div>
         </div>
+        <br>
+
+    </body>
+
+        <br>
+
+    <style>
+        body {
+            background-color: #000133;
+            color: rgb(255, 255, 255);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .titulo {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        /* Carrossel horizontal */
+        .carrossel {
+            display: flex;
+            overflow-x: auto;
+            gap: 10px;
+            scroll-behavior: smooth;
+        }
+
+        .carrossel::-webkit-scrollbar {
+            display: none;
+            /* esconde a barra de rolagem */
+        }
+
+        /* Cada item do carrossel */
+        .item {
+            position: relative;
+            min-width: 200px;
+            height: 300px;
+            border-radius: 5px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Zoom ao passar o mouse */
+        .item:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        /* Título sobre a imagem */
+        .item .titulo-filme {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 5px;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+            text-align: center;
+            font-size: 16px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .item:hover .titulo-filme {
+            opacity: 1;
+        }
+    </style>
+    </head>
+
+    <body>
+
+        <div class="container">
+        
+
+            <div class="carrossel">
+                <div class="item">
+                    <a href="fime1.html">
+                    <img src="ye.jpeg" alt="Filme 1">
+                    </a>
+                    <div class="titulo-filme">Filme 1
+                        
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="filme2.html">
+                    <img src="fran.jpg" alt="Filme 2">
+                    </a>
+                    <div class="titulo-filme">Filme 2
+                
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="filme3.html">
+                    <img src="fan.jpg" alt="Filme 3">
+                    </a>
+                    <div class="titulo-filme">Filme 3
+                    
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="filme4.html">
+                    <img src="invocação do mal.jpg" alt="Filme 4">
+                    </a>
+                    <div class="titulo-filme">Filme 4
+                    
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="filme5.html">
+                    <img src="corra.webp" alt="Filme 5">
+                    </a>
+                    
+                    <div class="titulo-filme">Filme 5</div>
+                </div>
+            </div>
+        </div>
+        <br>
 
     </body>
 
