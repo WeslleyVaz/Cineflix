@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Filme - Página de Exibição</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #141414;
+      color: white;
+    }
+
+    .container {
+      display: flex;
+      padding: 40px;
+    }
+
+    .capa {
+      width: 300px;
+    }
+
+    .capa img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .info {
+      margin-left: 40px;
+      max-width: 600px;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    .botoes {
+      margin: 20px 0;
+    }
+
+    button {
+      padding: 12px 20px;
+      margin-right: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .assistir {
+      background-color: red;
+      color: white;
+    }
+
+    .trailer {
+      background-color: gray;
+      color: white;
+    }
+
+    iframe {
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+
+    .resenha {
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Capa do filme -->
+    <div class="capa">
+      <img src="ni.jpg" alt="Capa do Filme">
+    </div>
+
+    <!-- Informações -->
+    <div class="info">
+      <h1>O Agente Noturno</h1>
+      <p><strong>Gênero:</strong> Ação, Aventura</p>
+      <p><strong>Ano:</strong> 2008</p>
+
+      <div class="botoes">
+        <button class="assistir">▶ Assistir</button>
+        <button class="trailer" onclick="mostrarTrailer()">Ver Trailer</button>
+      </div>
+
+      <!-- Trailer -->
+      <div id="areaTrailer" style="display:none;">
+        <iframe width="560" height="315"
+          src="O Agente Noturno  Trailer oficial  Netflix - Netflix Brasil (720p, h264, youtube).mp4"
+          title="Trailer"
+          frameborder="0"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <!-- Resenha -->
+      <div class="resenha">
+        <h3>Sinopse</h3>
+        <p>
+          Continuação do sucesso 'Batman Begins', 'Batman -- O Cavaleiro das Trevas' reúne novamente o diretor Christopher Nolan e o ator Christian Bale, que reprisa o papel de Batman/Bruce Wayne em sua luta contra o crime.
+Com a ajuda do tenente Jim Gordon e do novo promotor público Harvey Dent, Batman prepara-se para acabar com o crime organizado em Gotham de uma vez por todas. O triunvirato se mostra eficiente, mas logo todos se descobrem vítimas de um genial criminoso em ascensão conhecido Coringa, que transforma Gotham em uma anarquia e força o Cavaleiro das Trevas a caminhar na linha tênue entre herói e justiceiro.
+O ator indicado para o Oscar® Heath Ledger (O Segredo de Brokeback Mountain), estrela como o arquiinimigo do Homem Morcego e Aaron Eckhart interpreta o promotor público Harvey Dent. Maggie Gyllenhaal une-se ao elenco no papel de Rachel Dawes. Retomando seus papéis de Batman Begins estão Gary Oldman como tenente Jim Gordon; o ator vencedor do Oscar® Michael Caine (Regras da vida) como Alfred; e o ator vencedor do Oscar® Morgan Freeman (Menina de Ouro) como Lucius Fox.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function mostrarTrailer() {
+      var trailer = document.getElementById("areaTrailer");
+      trailer.style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
