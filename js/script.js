@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    $(btnassistir).click(function () {
+    $("#btnassistir").click(function () {
         Swal.fire({
             icon: "error",
             title: "Oops...",
@@ -9,15 +9,15 @@ $(document).ready(function () {
     })
 $("#btnterror").click(function () {
     $(".card").hide();
-    $(".Terror").show();
+    $(".terror").show();
 })
 $("#btndrama").click(function () {
     $(".card").hide();
-    $(".Drama").show();
+    $(".drama").show();
 })
-$("#btncomédia").click(function() {
+$("#btncomedia").click(function() {
     $(".card").hide();
-    $(".Comédia").show();
+    $(".comedia").show();
 
 })
 })
