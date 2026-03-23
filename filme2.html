@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <title>Filme - Página de Exibição</title>
@@ -68,23 +69,24 @@
     }
   </style>
 </head>
+
 <body>
 
   <div class="container">
-    
+
     <!-- Capa do filme -->
     <div class="capa">
       <img src="star wars.jpg" alt="Capa do Filme">
     </div>
 
     <!-- Informações -->
-    <div class="info">
+    <div class="Ação">
       <h1>Star Wars: Os Últimos Jedi</h1>
-      <p><strong>Gênero:</strong> Ação, Aventura</p>
-      <p><strong>Ano:</strong> 2008</p>
+      <p><strong>Gênero:</strong> Ação</p>
+      <p><strong>Ano:</strong> 2017</p>
 
       <div class="botoes">
-        <button class="assistir">▶ Assistir</button>
+        <button id="btnassistir" class="assistir">▶ Assistir</button>
         <button class="trailer" onclick="mostrarTrailer()">Ver Trailer</button>
       </div>
 
@@ -92,9 +94,7 @@
       <div id="areaTrailer" style="display:none;">
         <iframe width="560" height="315"
           src="Star Wars Os Últimos Jedi Trailer Oficial - Dublado [PT-BR] HD 1080p60f - Star Wars Plus (720p, h264, youtube).mp4"
-          title="Trailer"
-          frameborder="0"
-          allowfullscreen>
+          title="Trailer" frameborder="0" allowfullscreen>
         </iframe>
       </div>
 
@@ -102,9 +102,8 @@
       <div class="resenha">
         <h3>Sinopse</h3>
         <p>
-          Continuação do sucesso 'Batman Begins', 'Batman -- O Cavaleiro das Trevas' reúne novamente o diretor Christopher Nolan e o ator Christian Bale, que reprisa o papel de Batman/Bruce Wayne em sua luta contra o crime.
-Com a ajuda do tenente Jim Gordon e do novo promotor público Harvey Dent, Batman prepara-se para acabar com o crime organizado em Gotham de uma vez por todas. O triunvirato se mostra eficiente, mas logo todos se descobrem vítimas de um genial criminoso em ascensão conhecido Coringa, que transforma Gotham em uma anarquia e força o Cavaleiro das Trevas a caminhar na linha tênue entre herói e justiceiro.
-O ator indicado para o Oscar® Heath Ledger (O Segredo de Brokeback Mountain), estrela como o arquiinimigo do Homem Morcego e Aaron Eckhart interpreta o promotor público Harvey Dent. Maggie Gyllenhaal une-se ao elenco no papel de Rachel Dawes. Retomando seus papéis de Batman Begins estão Gary Oldman como tenente Jim Gordon; o ator vencedor do Oscar® Michael Caine (Regras da vida) como Alfred; e o ator vencedor do Oscar® Morgan Freeman (Menina de Ouro) como Lucius Fox.
+          Rey tenta entender melhor a Força com Luke Skywalker, enquanto a Resistência luta para sobreviver ao avanço da
+          Primeira Ordem.
         </p>
       </div>
 
@@ -117,6 +116,9 @@ O ator indicado para o Oscar® Heath Ledger (O Segredo de Brokeback Mountain), e
       trailer.style.display = "block";
     }
   </script>
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="js/script.js"></script>
 </body>
+
 </html>
