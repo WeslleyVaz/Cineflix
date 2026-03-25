@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
@@ -10,10 +10,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-
+<div style="text-align: center;">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="netflix.html" style="color: blue;">CINEFLIX</a>
+            <a class="navbar-brand" href="series.html" style="color: blue;">CINEFLIX</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -28,7 +28,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="series.html" , style="color: rgb(0, 0, 136);">Series</a>
                     </li>
-                    <div>
+<div>
                 <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false" style="color: rgb(0,0,136);">
@@ -38,10 +38,10 @@
                             <li><button class="dropdown-item" id="btnterror" style="color: rgb(0,0,136);">Terror</button></li>
                             <li> <button class="dropdown-item" id="btndrama" style="color: rgb(0,0,136);">Drama</button>
                             </li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><button class="dropdown-item" href="btncomédia" style="color: rgb(0,0,136);">Comédia</button></li>
+                            <li><button class="dropdown-item" id="btnação" style="color: rgb(0,0,136);">Ação</button></li>
+                            <li><button class="dropdown-item" id="btncomedia" style="color: rgb(0,0,136);">Comédia</button></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><button class="dropdown-item" id="btntodos" style="color: rgb(0,0,136);">Todos</button></li>
                         
                 
 </div>
@@ -62,11 +62,11 @@
                             <li><a class="dropdown-item" href="login.html" style="color: rgb(0,0,136);">Log-in</a></li>
                         
 </div>
-
+                </form>
             </div>
         </div>
     </nav>
-
+</div>
 </head>
 
 <body>
@@ -146,7 +146,7 @@
             <div class="titulo">Populares</div>
 
             <div class="carrossel">
-                <div class="item">
+                <div class="item Ação">
                     <a href="serie 1.html">
                     <img src="papel.png" alt="Serie 1">
                     </a>
@@ -154,7 +154,7 @@
                         
                     </div>
                 </div>
-                <div class="item">
+                <div class="item Drama">
                     <a href="serie 2.html">
                     <img src="breaking.jpg" alt="Serie 2">
                     </a>
@@ -162,7 +162,7 @@
                 
                     </div>
                 </div>
-                <div class="item">
+                <div class="item Drama">
                     <a href="serie 3.html">
                     <img src="game.jpg" alt="Serie 3">
                     </a>
@@ -170,7 +170,7 @@
                     
                     </div>
                 </div>
-                <div class="item">
+                <div class="item Terror">
                     <a href="serie 4.html">
                     <img src="ye.jpeg" alt="Serie 4">
                     </a>
@@ -178,7 +178,7 @@
                     
                     </div>
                 </div>
-                <div class="item">
+                <div class="item Comedia">
                     <a href="serie 5.html">
                     <img src="the.jpg" alt="Serie 5">
                     </a>
@@ -191,6 +191,9 @@
     </body>
 
 </html>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/script.js"></script>
 </body>
 
 </html>

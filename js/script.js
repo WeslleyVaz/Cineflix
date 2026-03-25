@@ -7,17 +7,39 @@ $(document).ready(function () {
             text: "Algo Deu Errado!"
         });
     })
-$("#btnterror").click(function () {
-    $(".card").hide();
-    $(".terror").show();
-})
-$("#btndrama").click(function () {
-    $(".card").hide();
-    $(".drama").show();
-})
-$("#btncomedia").click(function() {
-    $(".card").hide();
-    $(".comedia").show();
 
-})
+    $("#btnterror").click(function () {
+        $(".Ação").hide();
+        $(".Comedia").hide();
+        $(".Drama").hide();
+        $(".Terror").show();
+    })
+
+  $("#btnação").click(function () {
+        $(".Ação").show();
+        $(".Comedia").hide();
+        $(".Drama").hide();
+        $(".Terror").hide();
+    })
+
+    $("#btndrama").click(function () {
+        $(".Ação").hide();
+        $(".Comedia").hide();
+        $(".Terror").hide();
+        $(".Drama").show();
+    })
+    $("#btncomedia").click(function () {
+        $(".Terror").hide();
+        $(".Drama").hide();
+        $(".Ação").hide();
+        $(".Comedia").show();
+
+    })
+    $("#btntodos").click(function () {
+        $(".Terror").show();
+        $(".Drama").show();
+        $(".Ação").show();
+        $(".Comedia").show();
+
+    })
 })

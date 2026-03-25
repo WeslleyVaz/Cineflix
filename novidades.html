@@ -13,7 +13,7 @@
 <div style="text-align: center;">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="netflix.html" style="color: blue;">CINEFLIX</a>
+            <a class="navbar-brand" href="series.html" style="color: blue;">CINEFLIX</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -27,7 +27,8 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="series.html" , style="color: rgb(0, 0, 136);">Series</a>
-                        <div>
+                    </li>
+<div>
                 <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false" style="color: rgb(0,0,136);">
@@ -37,10 +38,10 @@
                             <li><button class="dropdown-item" id="btnterror" style="color: rgb(0,0,136);">Terror</button></li>
                             <li> <button class="dropdown-item" id="btndrama" style="color: rgb(0,0,136);">Drama</button>
                             </li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><button class="dropdown-item" href="btncomédia" style="color: rgb(0,0,136);">Comédia</button></li>
+                            <li><button class="dropdown-item" id="btnação" style="color: rgb(0,0,136);">Ação</button></li>
+                            <li><button class="dropdown-item" id="btncomedia" style="color: rgb(0,0,136);">Comédia</button></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><button class="dropdown-item" id="btntodos" style="color: rgb(0,0,136);">Todos</button></li>
                         
                 
 </div>
@@ -61,13 +62,13 @@
                             <li><a class="dropdown-item" href="login.html" style="color: rgb(0,0,136);">Log-in</a></li>
                         
 </div>
-                
+                </form>
             </div>
         </div>
-        </div>
     </nav>
-
+</div>
 </head>
+
 
 <body>
 
@@ -146,7 +147,7 @@
             <div class="titulo">Novidades</div>
 
             <div class="carrossel">
-                <div class="item">
+                <div class="item Ação">
                     <a href="night.html">
                     <img src="ni.jpg" alt="Filme 1">
                     </a>
@@ -154,7 +155,7 @@
                         
                     </div>
                 </div>
-                <div class="item">
+                <div class="item Terror">
                     <a href="frank.html">
                     <img src="fran.jpg" alt="Filme 2">
                     </a>
@@ -162,7 +163,7 @@
                 
                     </div>
                 </div>
-                <div class="item">
+                <div class="item Drama">
                     <a href="o poder.html">
                     <img src="o por.webp" alt="Filme 3">
                     </a>
@@ -170,7 +171,7 @@
                     
                     </div>
                 </div>
-                <div class="item">
+                <div class="item Drama">
                     <a href="formula.html">
                     <img src="1.webp" alt="Filme 4">
                     </a>
@@ -178,7 +179,7 @@
                     
                     </div>
                 </div>
-                <div class="item">
+                <div class="item Ação">
                     <a href="samurai.html">
                     <img src="sam.jpg" alt="Filme 5">
                     </a>
@@ -268,7 +269,7 @@
         
 
             <div class="carrossel">
-                <div class="item">
+                <div class="item Drama">
                     <a href="dino.html">
                     <img src="dino.jpg" alt="Filme 1">
                     </a>
@@ -276,7 +277,7 @@
                         
                     </div>
                 </div>
-                <div class="item">
+                <div class="item Terror">
                     <a href="telefone.html">
                     <img src="tele.jpg" alt="Filme 2">
                     </a>
@@ -284,7 +285,7 @@
                 
                     </div>
                 </div>
-                <div class="item">
+                <div class="item Terror">
                     <a href="serie 4.html">
                     <img src="ye.jpeg" alt="Filme 3">
                     </a>
@@ -292,7 +293,7 @@
                     
                     </div>
                 </div>
-                <div class="item">
+                <div class="item Terror">
                     <a href="o mal.html">
                     <img src="mal.jpg" alt="Filme 4">
                     </a>
@@ -300,7 +301,7 @@
                     
                     </div>
                 </div>
-                <div class="item">
+                <div class="item Comedia">
                     <a href="fantasmas.html">
                     <img src="fan.jpg" alt="Filme 5">
                     </a>
@@ -314,6 +315,10 @@
     </body>
 
 </html>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/script.js"></script>
 </body>
 
 </html>
